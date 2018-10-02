@@ -5,7 +5,7 @@ class Anagram
     self.word = word 
   end
   
-  def match
-    
+  def match(anagram_array)
+    anagram_array.find_all {|a| a.word = word}
   end 
 end 
